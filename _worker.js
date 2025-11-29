@@ -3,10 +3,11 @@ let cfips = [
     // 格式: "IP地址:端口#备注"
     // 示例:
     "46.3.105.69:22899#🇭🇰HK",
-    "saas.sin.fan:443#🇭🇰HK"	
+    "saas.sin.fan:443#🇭🇰HK",
+    "[2001:db8::1]:2083#SG"
 ];
 
-let cfips_api = ['https://cf.090227.xyz/ct?ips=20']; // api里的内容格式和{cfips}里相同
+let cfips_api = ['']; // api里的内容格式和{cfips}里相同
 
 // Base64 encoding function
 function utf8ToBase64(str) {
@@ -1026,3 +1027,4 @@ ${url.origin}/sub?link=ss://base64_encoded_link_here
         });
     }
 };
+
