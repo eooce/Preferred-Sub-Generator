@@ -157,6 +157,7 @@ const frontendHtml = `
             max-width: 600px;
             width: 90%;
             padding: 2rem;
+            padding-bottom: 10px;
             border-radius: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.05),
                         inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -280,9 +281,10 @@ const frontendHtml = `
             text-align: center;
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             .container {
-                padding: 1.5rem;
+                padding: 1rem;
+                width: 100%;
             }
             
             h1 {
@@ -390,7 +392,7 @@ const frontendHtml = `
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-    <a href="https://github.com/eooce" target="_blank" class="github-corner" aria-label="View source on Github">
+    <a href="https://github.com/eooce/Preferred-Sub-Generator" target="_blank" class="github-corner" aria-label="View source on Github">
         <svg viewBox="0 0 250 250" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
             <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -1033,3 +1035,4 @@ ${url.origin}/sub?link=ss://base64_encoded_link_here
         });
     }
 };
+
